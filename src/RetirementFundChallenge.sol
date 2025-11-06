@@ -32,12 +32,17 @@ contract RetirementFundChallenge {
     function collectPenalty() public {
         require(msg.sender == beneficiary);
 
-        uint256 withdrawn = startBalance - address(this).balance;
+        // just to allow underflow problem
+        unchecked {
+            uint256 withdrawn = startBalance - address(this).balance;
+            
+            // an early withdrawal occurred
+            require(withdrawn > 0);
 
-        // an early withdrawal occurred
-        require(withdrawn > 0);
-
-        // penalty is what's left
-        payable(msg.sender).transfer(address(this).balance);
+            // penalty is what's left
+            payable(msg.sender).transfer(address(this).balance);
+        }
     }
+
+    receive() external payable { }
 }
