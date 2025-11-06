@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
-import {Test} from "forge-std/Test.sol";
+import {Test, console} from "forge-std/Test.sol";
 import {RetirementFundChallenge} from "../src/RetirementFundChallenge.sol";
 
-contract RetirementFundChallengeTest is Test {
+contract RetirementFundChallengeAttackTest is Test {
     RetirementFundChallenge public retirementFund;
     
     address constant BENEFICIARY = address(0x70997970C51812dc3A010C7d01b50e0d17dc79C8);
@@ -14,9 +14,11 @@ contract RetirementFundChallengeTest is Test {
     }
 
     function testAttack() public {
-        assertEq(address(retirementFund).balance, 1 ether);
+        vm.deal(BENEFICIARY, 100 wei);  
 
-        vm.deal(BENEFICIARY, 100 wei);        
+        console.log("Before Attack:");      
+        console.log("Beneficiary balance: ", BENEFICIARY.balance);      
+        console.log("Retirement balance: ", address(retirementFund).balance);            
         
         // beneficiary add funds to prepate the attack
         vm.prank(BENEFICIARY);
@@ -30,5 +32,10 @@ contract RetirementFundChallengeTest is Test {
         retirementFund.collectPenalty();
         assertEq(address(retirementFund).balance, 0);
         assertEq(address(BENEFICIARY).balance, 1 ether + 100 wei );
+
+        console.log("");
+        console.log("After Attack:");      
+        console.log("Beneficiary balance: ", BENEFICIARY.balance);      
+        console.log("Retirement balance: ", address(retirementFund).balance);      
     }
 }
