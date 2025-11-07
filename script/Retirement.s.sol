@@ -2,7 +2,7 @@
 pragma solidity ^0.8.24;
 
 import {Script, console} from "forge-std/Script.sol";
-import {RetirementFundChallenge} from "../src/RetirementFundChallenge.sol";
+import {RetirementFundChallenge} from "../src/retirement/RetirementFundChallenge.sol";
 
 contract RetirementScript is Script {
     
