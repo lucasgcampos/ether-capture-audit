@@ -12,17 +12,19 @@ contract ProtectedRetirementFundChallenge {
 
     constructor(address _player) payable {
         require(msg.value == 1 ether);
+        require(_player != address(0), "Invalid address: zero address");
 
         beneficiary = _player;
         startBalance = msg.value;
     }
 
     function withdraw() external {
+        require(msg.sender == owner);
+        require(owner != address(0), "Invalid address: zero address");
+        
         if (isComplete) revert();
-
         isComplete = true;
 
-        require(msg.sender == owner);
 
         if (block.timestamp < expiration) {
             // early withdrawal incurs a 10% penalty
