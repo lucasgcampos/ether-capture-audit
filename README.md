@@ -1,66 +1,65 @@
-## Foundry
+# 🧠 Smart Contract Security Audits
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## 📘 Overview
+This repository contains a collection of **smart contract security audits** performed on various Solidity-based projects.  
+Each audit includes detailed vulnerability findings, severity classifications, and recommended remediations following industry best practices.  
 
-Foundry consists of:
+The goal of this repository is to serve both as:
+- A **knowledge base** for common Solidity vulnerabilities and secure coding patterns.  
+- A **portfolio** of real-world contract audits demonstrating analysis, exploit reproduction, and secure refactoring.
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+---
 
-## Documentation
+## 🧩 Repository Structure
 
-https://book.getfoundry.sh/
+Each audited contract is organized in its own folder containing:
+- **Source code** of the analyzed contract (`.sol` files).  
+- **Audit report** (`README.md`) describing vulnerabilities, severity levels, and recommendations.  
+- **Test scripts** (`.t.sol` or `.s.sol`) to reproduce vulnerabilities or validate fixes.  
 
-## Usage
+Example structure:
+/src
+├── retirement
+│ ├── contract.sol
+│ └── README.md ← detailed audit report
+├── other/
+│ └── ...
+└── ...
 
-### Build
 
-```shell
-$ forge build
-```
+---
 
-### Test
+## 🧾 Example Audit Report
+A sample of one of the audits (the **RetirementFundChallenge** review) can be found here:
 
-```shell
-$ forge test
-```
+👉 [View the RetirementFundChallenge Audit Report](./src/retirement/README.md)
 
-### Format
+This report includes:
+- Full vulnerability breakdown by severity.  
+- Suggested code improvements.  
+- Secure implementation examples.  
+- Step-by-step instructions on how to execute the tests and scripts locally using **Foundry**.
 
-```shell
-$ forge fmt
-```
+---
 
-### Gas Snapshots
+## ⚙️ Environment & Tools
+All contracts and tests are built and audited using the following toolset:
+- [**Foundry**](https://book.getfoundry.sh/) (for testing, scripting, and deployment)  
+- [**Anvil**](https://book.getfoundry.sh/anvil/) (local Ethereum node)  
+- [**Solidity**](https://soliditylang.org/) `^0.8.x`  
 
-```shell
-$ forge snapshot
-```
+---
 
-### Anvil
+## 🛡️ Purpose
+This repository aims to promote **secure smart contract development** through:
+- Demonstrating **real audit methodologies**.  
+- Documenting **exploit scenarios** and **fix implementations**.  
+- Encouraging best practices aligned with **OpenZeppelin** and **Ethereum security standards**.
 
-```shell
-$ anvil
-```
+---
 
-### Deploy
+## 👤 Author
+**Lucas Gonçalves de Campos**  
+📅 *November 2025*  
+🔗 *Blockchain Security Review Collection*
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
