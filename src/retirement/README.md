@@ -14,6 +14,7 @@ During the review, several critical and moderate vulnerabilities were identified
 | **High** | Beneficiary can exploit an **underflow** vulnerability due to the outdated Solidity version, enabling unauthorized withdrawals. | **Critical – Fund theft possible** |
 | **Medium** | Solidity version is significantly outdated (`^0.4.x`), exposing the contract to arithmetic underflow/overflow risks. | **Medium – Arithmetic integrity compromised** |
 | **Medium** | Use of `address(this).balance` instead of an internal variable to track balance; the contract’s balance can be manipulated via external ETH transfers. | **Medium – Inconsistent internal state** |
+| **Low** | Missing zero address validation in constructor | **Low – Invalid beneficiary** |
 | **Low** | Reliance on `block.timestamp`, which can be slightly manipulated by miners. | **Low – Negligible impact in this context** |
 
 ---
@@ -105,7 +106,8 @@ Security	| Add onlyOwner modifier to withdraw()
 Logic	| Add isComplete state control
 Compiler	| Update Solidity version to ^0.8.0
 Best Practice |	Replace .transfer() with .call()
-Integrity	| Track balance with an internal variable
+Best Practice | Check that the address is not zero
+Integrity | Track balance with an internal variable
 Visibility	| Use external instead of public
 
 ## ▶️ How to run the project

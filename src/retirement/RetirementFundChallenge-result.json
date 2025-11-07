@@ -1,0 +1,1009 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "isComplete",
+            "source_mapping": {
+              "start": 392,
+              "length": 99,
+              "filename_relative": "RetirementFundChallenge.sol",
+              "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+              "filename_short": "RetirementFundChallenge.sol",
+              "is_dependency": false,
+              "lines": [
+                17,
+                18,
+                19
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "RetirementFundChallenge",
+                "source_mapping": {
+                  "start": 58,
+                  "length": 1244,
+                  "filename_relative": "RetirementFundChallenge.sol",
+                  "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+                  "filename_short": "RetirementFundChallenge.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "isComplete()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "address(this).balance == 0",
+            "source_mapping": {
+              "start": 451,
+              "length": 33,
+              "filename_relative": "RetirementFundChallenge.sol",
+              "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+              "filename_short": "RetirementFundChallenge.sol",
+              "is_dependency": false,
+              "lines": [
+                18
+              ],
+              "starting_column": 9,
+              "ending_column": 42
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "isComplete",
+                "source_mapping": {
+                  "start": 392,
+                  "length": 99,
+                  "filename_relative": "RetirementFundChallenge.sol",
+                  "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+                  "filename_short": "RetirementFundChallenge.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "RetirementFundChallenge",
+                    "source_mapping": {
+                      "start": 58,
+                      "length": 1244,
+                      "filename_relative": "RetirementFundChallenge.sol",
+                      "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+                      "filename_short": "RetirementFundChallenge.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47,
+                        48,
+                        49
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "isComplete()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "RetirementFundChallenge.isComplete() (RetirementFundChallenge.sol#17-19) uses a dangerous strict equality:\n\t- address(this).balance == 0 (RetirementFundChallenge.sol#18)\n",
+        "markdown": "[RetirementFundChallenge.isComplete()](RetirementFundChallenge.sol#L17-L19) uses a dangerous strict equality:\n\t- [address(this).balance == 0](RetirementFundChallenge.sol#L18)\n",
+        "first_markdown_element": "RetirementFundChallenge.sol#L17-L19",
+        "id": "cef7bf565dcae29ed2cc01a868834be02b5429d61fe913ff5c8f867cb1c44f10",
+        "check": "incorrect-equality",
+        "impact": "Medium",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "player",
+            "source_mapping": {
+              "start": 251,
+              "length": 14,
+              "filename_relative": "RetirementFundChallenge.sol",
+              "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+              "filename_short": "RetirementFundChallenge.sol",
+              "is_dependency": false,
+              "lines": [
+                10
+              ],
+              "starting_column": 17,
+              "ending_column": 31
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "constructor",
+                "source_mapping": {
+                  "start": 239,
+                  "length": 147,
+                  "filename_relative": "RetirementFundChallenge.sol",
+                  "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+                  "filename_short": "RetirementFundChallenge.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "RetirementFundChallenge",
+                    "source_mapping": {
+                      "start": 58,
+                      "length": 1244,
+                      "filename_relative": "RetirementFundChallenge.sol",
+                      "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+                      "filename_short": "RetirementFundChallenge.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47,
+                        48,
+                        49
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "constructor(address)"
+                }
+              }
+            }
+          },
+          {
+            "type": "node",
+            "name": "beneficiary = player",
+            "source_mapping": {
+              "start": 325,
+              "length": 20,
+              "filename_relative": "RetirementFundChallenge.sol",
+              "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+              "filename_short": "RetirementFundChallenge.sol",
+              "is_dependency": false,
+              "lines": [
+                13
+              ],
+              "starting_column": 9,
+              "ending_column": 29
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "constructor",
+                "source_mapping": {
+                  "start": 239,
+                  "length": 147,
+                  "filename_relative": "RetirementFundChallenge.sol",
+                  "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+                  "filename_short": "RetirementFundChallenge.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "RetirementFundChallenge",
+                    "source_mapping": {
+                      "start": 58,
+                      "length": 1244,
+                      "filename_relative": "RetirementFundChallenge.sol",
+                      "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+                      "filename_short": "RetirementFundChallenge.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47,
+                        48,
+                        49
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "constructor(address)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "RetirementFundChallenge.constructor(address).player (RetirementFundChallenge.sol#10) lacks a zero-check on :\n\t\t- beneficiary = player (RetirementFundChallenge.sol#13)\n",
+        "markdown": "[RetirementFundChallenge.constructor(address).player](RetirementFundChallenge.sol#L10) lacks a zero-check on :\n\t\t- [beneficiary = player](RetirementFundChallenge.sol#L13)\n",
+        "first_markdown_element": "RetirementFundChallenge.sol#L10",
+        "id": "2fc08425e7454cb6b88a30cd2b9da52429aa892f155d7a06f2960575dcfb8c23",
+        "check": "missing-zero-check",
+        "impact": "Low",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "withdraw",
+            "source_mapping": {
+              "start": 497,
+              "length": 336,
+              "filename_relative": "RetirementFundChallenge.sol",
+              "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+              "filename_short": "RetirementFundChallenge.sol",
+              "is_dependency": false,
+              "lines": [
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "RetirementFundChallenge",
+                "source_mapping": {
+                  "start": 58,
+                  "length": 1244,
+                  "filename_relative": "RetirementFundChallenge.sol",
+                  "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+                  "filename_short": "RetirementFundChallenge.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              },
+              "signature": "withdraw()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "block.timestamp < expiration",
+            "source_mapping": {
+              "start": 577,
+              "length": 28,
+              "filename_relative": "RetirementFundChallenge.sol",
+              "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+              "filename_short": "RetirementFundChallenge.sol",
+              "is_dependency": false,
+              "lines": [
+                24
+              ],
+              "starting_column": 13,
+              "ending_column": 41
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdraw",
+                "source_mapping": {
+                  "start": 497,
+                  "length": 336,
+                  "filename_relative": "RetirementFundChallenge.sol",
+                  "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+                  "filename_short": "RetirementFundChallenge.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "RetirementFundChallenge",
+                    "source_mapping": {
+                      "start": 58,
+                      "length": 1244,
+                      "filename_relative": "RetirementFundChallenge.sol",
+                      "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+                      "filename_short": "RetirementFundChallenge.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47,
+                        48,
+                        49
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 0
+                    }
+                  },
+                  "signature": "withdraw()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "RetirementFundChallenge.withdraw() (RetirementFundChallenge.sol#21-30) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- block.timestamp < expiration (RetirementFundChallenge.sol#24)\n",
+        "markdown": "[RetirementFundChallenge.withdraw()](RetirementFundChallenge.sol#L21-L30) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [block.timestamp < expiration](RetirementFundChallenge.sol#L24)\n",
+        "first_markdown_element": "RetirementFundChallenge.sol#L21-L30",
+        "id": "806554f923735ba05c09e5728e42b84acccb346ba7142b5cea4d7a79ee536fb2",
+        "check": "timestamp",
+        "impact": "Low",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "startBalance",
+            "source_mapping": {
+              "start": 97,
+              "length": 20,
+              "filename_relative": "RetirementFundChallenge.sol",
+              "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+              "filename_short": "RetirementFundChallenge.sol",
+              "is_dependency": false,
+              "lines": [
+                5
+              ],
+              "starting_column": 5,
+              "ending_column": 25
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "RetirementFundChallenge",
+                "source_mapping": {
+                  "start": 58,
+                  "length": 1244,
+                  "filename_relative": "RetirementFundChallenge.sol",
+                  "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+                  "filename_short": "RetirementFundChallenge.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              }
+            }
+          }
+        ],
+        "description": "RetirementFundChallenge.startBalance (RetirementFundChallenge.sol#5) should be immutable \n",
+        "markdown": "[RetirementFundChallenge.startBalance](RetirementFundChallenge.sol#L5) should be immutable \n",
+        "first_markdown_element": "RetirementFundChallenge.sol#L5",
+        "id": "61e58f2a12e3f70dd4b4495c55a7838e4f0043bb6aa2763537fbaf5e112f56ec",
+        "check": "immutable-states",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "expiration",
+            "source_mapping": {
+              "start": 180,
+              "length": 52,
+              "filename_relative": "RetirementFundChallenge.sol",
+              "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+              "filename_short": "RetirementFundChallenge.sol",
+              "is_dependency": false,
+              "lines": [
+                8
+              ],
+              "starting_column": 5,
+              "ending_column": 57
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "RetirementFundChallenge",
+                "source_mapping": {
+                  "start": 58,
+                  "length": 1244,
+                  "filename_relative": "RetirementFundChallenge.sol",
+                  "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+                  "filename_short": "RetirementFundChallenge.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              }
+            }
+          }
+        ],
+        "description": "RetirementFundChallenge.expiration (RetirementFundChallenge.sol#8) should be immutable \n",
+        "markdown": "[RetirementFundChallenge.expiration](RetirementFundChallenge.sol#L8) should be immutable \n",
+        "first_markdown_element": "RetirementFundChallenge.sol#L8",
+        "id": "6d5f759c1a14e0fab02ad2ec8e7f98a881565bcb01d7b8fd601f97349b15ddbf",
+        "check": "immutable-states",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "owner",
+            "source_mapping": {
+              "start": 123,
+              "length": 26,
+              "filename_relative": "RetirementFundChallenge.sol",
+              "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+              "filename_short": "RetirementFundChallenge.sol",
+              "is_dependency": false,
+              "lines": [
+                6
+              ],
+              "starting_column": 5,
+              "ending_column": 31
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "RetirementFundChallenge",
+                "source_mapping": {
+                  "start": 58,
+                  "length": 1244,
+                  "filename_relative": "RetirementFundChallenge.sol",
+                  "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+                  "filename_short": "RetirementFundChallenge.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              }
+            }
+          }
+        ],
+        "description": "RetirementFundChallenge.owner (RetirementFundChallenge.sol#6) should be immutable \n",
+        "markdown": "[RetirementFundChallenge.owner](RetirementFundChallenge.sol#L6) should be immutable \n",
+        "first_markdown_element": "RetirementFundChallenge.sol#L6",
+        "id": "afdb18b7d596335d17cb96e11eb83d281842a346e49753ec93cbd3dbbee13c7b",
+        "check": "immutable-states",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "beneficiary",
+            "source_mapping": {
+              "start": 155,
+              "length": 19,
+              "filename_relative": "RetirementFundChallenge.sol",
+              "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+              "filename_short": "RetirementFundChallenge.sol",
+              "is_dependency": false,
+              "lines": [
+                7
+              ],
+              "starting_column": 5,
+              "ending_column": 24
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "RetirementFundChallenge",
+                "source_mapping": {
+                  "start": 58,
+                  "length": 1244,
+                  "filename_relative": "RetirementFundChallenge.sol",
+                  "filename_absolute": "/Users/lucas/capture/ether-capture-audit/src/retirement/RetirementFundChallenge.sol",
+                  "filename_short": "RetirementFundChallenge.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                }
+              }
+            }
+          }
+        ],
+        "description": "RetirementFundChallenge.beneficiary (RetirementFundChallenge.sol#7) should be immutable \n",
+        "markdown": "[RetirementFundChallenge.beneficiary](RetirementFundChallenge.sol#L7) should be immutable \n",
+        "first_markdown_element": "RetirementFundChallenge.sol#L7",
+        "id": "d71713991dd7de02a0bb6ed4172dae2e9e44445e493f74dd8826164c262e2baa",
+        "check": "immutable-states",
+        "impact": "Optimization",
+        "confidence": "High"
+      }
+    ]
+  }
+}
