@@ -59,6 +59,7 @@ contract RetirementFundChallengeAttackTest is Test {
         assertEq(990000000000000000, OWNER.balance);
         assertEq(10000000000000000, address(retirementFund).balance);
 
+        console.log("");
         console.log("After Attack:");      
         console.log("Owner balance: ", OWNER.balance);      
         console.log("Retirement balance: ", address(retirementFund).balance); 

@@ -119,6 +119,7 @@ From the project root, run:
 ```solidity
 forge t -vv
 ```
+![log output](./images/log-test.png)
 
 This executes the test suite with verbose logs (useful to display console.log outputs and detailed failure traces).
 
@@ -135,6 +136,7 @@ The -b 10 flag makes Anvil produce new blocks every 10 seconds (useful to simula
 ```solidity
 forge script script/Retirement.s.sol:RetirementScript --rpc-url "http://127.0.0.1:8545" --broadcast
 ```
+![log script](./images/log-script.png)
 
 This command compiles and runs the RetirementScript script, broadcasting transactions to the Anvil instance running at http://127.0.0.1:8545.
 
