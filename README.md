@@ -18,6 +18,7 @@ Each audited contract is organized in its own folder containing:
 - **Test scripts** (`.t.sol` or `.s.sol`) to reproduce vulnerabilities or validate fixes.  
 
 Example structure:
+```
 /src
 ├── retirement
 │ ├── contract.sol
@@ -25,6 +26,7 @@ Example structure:
 ├── other/
 │ └── ...
 └── ...
+```
 
 
 ---
