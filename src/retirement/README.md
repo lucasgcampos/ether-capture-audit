@@ -108,6 +108,44 @@ Best Practice |	Replace .transfer() with .call()
 Integrity	| Track balance with an internal variable
 Visibility	| Use external instead of public
 
+## ▶️ How to run the project
+
+**Prerequisites**
+- Foundry (forge & cast) installed.
+- Anvil (local Ethereum node) available if running locally.
+
+**Run tests (with logs)**
+From the project root, run:
+```solidity
+forge t -vv
+```
+
+This executes the test suite with verbose logs (useful to display console.log outputs and detailed failure traces).
+
+**Run locally (deploy and execute script)**
+1. Start a local Anvil node. The example below sets block production to one block every 10 seconds:
+
+```solidity
+anvil -b 10
+```
+
+The -b 10 flag makes Anvil produce new blocks every 10 seconds (useful to simulate time-dependent behavior).
+
+2. Deploy the script and broadcast the transaction to the local node (this will publish the contract and execute the included script, e.g., running the attack scenario):
+```solidity
+forge script script/Retirement.s.sol:RetirementScript --rpc-url "http://127.0.0.1:8545" --broadcast
+```
+
+This command compiles and runs the RetirementScript script, broadcasting transactions to the Anvil instance running at http://127.0.0.1:8545.
+
+**Notes**
+
+Ensure Anvil is running before executing the forge script command.
+
+Use --broadcast to send real transactions to the specified RPC; omit it for a dry run.
+
+If your script requires specific private keys or environment variables, set them accordingly (e.g., via export or a .env file) prior to broadcasting.
+
 ## 📘 Conclusion
 
 The audit identified critical vulnerabilities that could lead to total fund loss if exploited.
