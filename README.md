@@ -20,10 +20,11 @@ Each audited contract is organized in its own folder containing:
 Example structure:
 ```
 /src
-├── retirement
+├── random/
 │ ├── contract.sol
+│ ├── slither
 │ └── README.md ← detailed audit report
-├── other/
+├── retirement/
 │ └── ...
 └── ...
 ```
@@ -34,7 +35,8 @@ Example structure:
 ## 🧾 Example Audit Report
 A sample of one of the audits (the **RetirementFundChallenge** review) can be found here:
 
-👉 [View the RetirementFundChallenge Audit Report](./src/retirement/README.md)
+- [RetirementFundChallenge Audit Report](./src/retirement/README.md)
+- [GuessTheRandomNumberChallenge Audit Report](./src/random/README.md)
 
 This report includes:
 - Full vulnerability breakdown by severity.  
