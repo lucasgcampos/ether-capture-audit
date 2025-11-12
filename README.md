@@ -33,7 +33,7 @@ Example structure:
 ---
 
 ## 🧾 Example Audit Report
-A sample of one of the audits (the **RetirementFundChallenge** review) can be found here:
+Some samples of audits can be found here:
 
 - [PredictTheFutureChallenge Audit Report](./src/predict/README.md)
 - [RetirementFundChallenge Audit Report](./src/retirement/README.md)
