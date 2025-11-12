@@ -35,6 +35,7 @@ Example structure:
 ## 🧾 Example Audit Report
 A sample of one of the audits (the **RetirementFundChallenge** review) can be found here:
 
+- [PredictTheFutureChallenge Audit Report](./src/predict/README.md)
 - [RetirementFundChallenge Audit Report](./src/retirement/README.md)
 - [GuessTheRandomNumberChallenge Audit Report](./src/random/README.md)
 
