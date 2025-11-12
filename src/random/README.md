@@ -94,10 +94,10 @@ The contract implements a simple game where a `uint8 answer` is generated in the
 
 ## PoC and tests
 
-The repository includes a Foundry PoC that demonstrates the exploit via `vm.load` in the test environment, which is equivalent to reading storage in production via `provider.getStorageAt`.
+The repository includes a Foundry [PoC - code](https://github.com/lucasgcampos/ether-capture-audit/blob/main/test/random/GuessTheRandomNumberChallengeTest.sol) that demonstrates the exploit via `vm.load` in the test environment, which is equivalent to reading storage in production via `provider.getStorageAt`.
 
 ```solidity
-forge t
+forge t test/random/contract GuessTheRandomNumberChallengeTest.sol
 ```
 
 ---
