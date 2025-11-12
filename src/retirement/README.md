@@ -119,7 +119,7 @@ Visibility	| Use external instead of public
 **Run tests (with logs)**
 From the project root, run:
 ```solidity
-forge t -vv
+forge t -vv test/retirement/RetirementFundChallengeAttack.t.sol
 ```
 ![log output](./images/log-test.png)
 
@@ -162,7 +162,7 @@ The following improvements are strongly recommended:
 
 ### Auditor:
 
-👤 Lucas Gonçalves de Campos
+**[Lucas Campos](https://www.linkedin.com/in/lgcampos)**  
 
 📅 November 2025
 

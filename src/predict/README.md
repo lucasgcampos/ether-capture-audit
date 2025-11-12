@@ -107,7 +107,7 @@ Key elements of the contract analyzed:
 The repository includes a Foundry [PoC - code](https://github.com/lucasgcampos/ether-capture-audit/blob/main/test/predict/PredictTheFutureChallengeTest.sol) that demonstrates the exploit via `vm.roll` in the test environment, which is equivalent to waiting a hash equal the guess`. To run:
 
 ```solidity
-forge t test/predict/PredictTheFutureChallengeTest.sol
+forge t test/predict/PredictTheFutureChallengeTest.t.sol
 ```
 
 ---
@@ -130,7 +130,7 @@ The contract exhibits clear, exploitable weaknesses in randomness derivation and
 ---
 
 ## 👤 Authors
-**Lucas Campos**  
+**[Lucas Campos](https://www.linkedin.com/in/lgcampos)**  
 **[Filêmon Santos](https://www.linkedin.com/in/filemoncsantos)**  
 📅 *November 2025*  
 🔗 *Blockchain Security Review Collection*
